@@ -6,8 +6,6 @@
 
 package org.bry.composer;
 
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import org.netbeans.modules.php.api.executable.InvalidPhpExecutableException;
 import org.netbeans.modules.php.api.phpmodule.PhpModule;
 import org.openide.util.NbBundle;
