@@ -42,6 +42,8 @@ public class Installer extends ModuleInstall implements Runnable {
 								JMenu jmenu = (JMenu) popup.getPopupPresenter();
 								jmenu.add(new DumpAutoloadAction());
 								jmenu.add(new DumpAutoloadOptimizeAction());
+								jmenu.add(new UpdateNoScriptsAction());
+								jmenu.add(new UpdateNoDevNoScriptsAction());
 							}
 						}
 					}

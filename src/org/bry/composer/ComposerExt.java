@@ -52,10 +52,13 @@ public class ComposerExt {
 
     // commands
     private static final String DUMP_AUTOLOAD_COMMAND = "dump-autoload"; // NOI18N
+	private static final String UPDATE = "update"; // NOI18N
     // params
     private static final String ANSI_PARAM = "--ansi"; // NOI18N
     private static final String NO_ANSI_PARAM = "--no-ansi"; // NOI18N
     private static final String NO_INTERACTION_PARAM = "--no-interaction"; // NOI18N
+	private static final String NO_SCRIPTS_PARAM = "--no-scripts";
+	private static final String NO_DEV_PARAM = "--no-dev";
     private static final String OPTIMIZE_PARAM = "-o"; // NOI18N
     private static final List<String> DEFAULT_PARAMS = Arrays.asList(
         ANSI_PARAM,
@@ -96,6 +99,22 @@ public class ComposerExt {
         }
         return true;
     }
+
+	@NbBundle.Messages("ComposerExt.run.updateNoScripts=Composer (update --no-scripts)")
+	public Future<Integer> updateNoScripts(PhpModule phpModule) {
+		assert phpModule != null;
+		return runCommand(phpModule, UPDATE, Bundle.ComposerExt_run_updateNoScripts(),Collections.singletonList(NO_SCRIPTS_PARAM));
+	}
+
+	@NbBundle.Messages("ComposerExt.run.updateNoDevNoScripts=Composer (update --no-dev --no-scripts)")
+	public Future<Integer> updateNoDevNoScripts(PhpModule phpModule) {
+		assert phpModule != null;
+		ArrayList<String> param = new ArrayList<>();
+		param.add(NO_DEV_PARAM);
+		param.add(NO_SCRIPTS_PARAM);
+
+		return runCommand(phpModule, UPDATE, Bundle.ComposerExt_run_updateNoScripts(),param);
+	}
 
 	@NbBundle.Messages("ComposerExt.run.dumpAutoload=Composer (dump-autoload)")
 	public Future<Integer> dumpAutoload(PhpModule phpModule) {
