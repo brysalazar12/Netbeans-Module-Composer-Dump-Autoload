@@ -5,4 +5,5 @@ OpenIDE-Module-Install: org/bry/composer/Installer.class
 OpenIDE-Module-Layer: org/bry/composer/layer.xml
 OpenIDE-Module-Localizing-Bundle: org/bry/composer/Bundle.properties
 OpenIDE-Module-Specification-Version: 1.0
+OpenIDE-Module-Short-Description: Add dump-autoload and update --no-scripts in Composer
 
