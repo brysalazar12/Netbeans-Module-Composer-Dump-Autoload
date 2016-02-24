@@ -3,8 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/netbeans_project/modcomposer/src/org/bry/composer/Installer.java</file>
-            <file>file:/D:/netbeans_project/modcomposer/src/org/bry/composer/DumpAutoloadAction.java</file>
+            <file>file:/D:/netbeans_project/Netbeans-Module-Composer-Dump-Autoload/src/org/bry/composer/Installer.java</file>
+            <file>file:/D:/netbeans_project/Netbeans-Module-Composer-Dump-Autoload/src/org/bry/composer/DumpAutoloadAction.java</file>
+            <file>file:/D:/netbeans_project/Netbeans-Module-Composer-Dump-Autoload/src/org/bry/composer/UpdateNoScriptsAction.java</file>
+            <file>file:/D:/netbeans_project/Netbeans-Module-Composer-Dump-Autoload/manifest.mf</file>
+            <file>file:/D:/netbeans_project/Netbeans-Module-Composer-Dump-Autoload/src/org/bry/composer/ComposerExt.java</file>
+            <file>file:/D:/netbeans_project/Netbeans-Module-Composer-Dump-Autoload/src/org/bry/composer/UpdateNoDevNoScriptsAction.java</file>
         </group>
     </open-files>
 </project-private>
