@@ -44,6 +44,7 @@ public class Installer extends ModuleInstall implements Runnable {
 								jmenu.add(new DumpAutoloadOptimizeAction());
 								jmenu.add(new UpdateNoScriptsAction());
 								jmenu.add(new UpdateNoDevNoScriptsAction());
+								jmenu.add(new ShowInstalledAction());
 							}
 						}
 					}

@@ -53,6 +53,7 @@ public class ComposerExt {
     // commands
     private static final String DUMP_AUTOLOAD_COMMAND = "dump-autoload"; // NOI18N
 	private static final String UPDATE = "update"; // NOI18N
+	private static final String SHOW = "show";
     // params
     private static final String ANSI_PARAM = "--ansi"; // NOI18N
     private static final String NO_ANSI_PARAM = "--no-ansi"; // NOI18N
@@ -60,6 +61,7 @@ public class ComposerExt {
 	private static final String NO_SCRIPTS_PARAM = "--no-scripts";
 	private static final String NO_DEV_PARAM = "--no-dev";
     private static final String OPTIMIZE_PARAM = "-o"; // NOI18N
+	private static final String INSTALLED_PARAM = "--installed";
     private static final List<String> DEFAULT_PARAMS = Arrays.asList(
         ANSI_PARAM,
         NO_INTERACTION_PARAM
@@ -99,6 +101,12 @@ public class ComposerExt {
         }
         return true;
     }
+
+	@NbBundle.Messages("ComposerExt.run.showInstalled=Composer (show --installed)")
+	public Future<Integer> showInstalled(PhpModule phpModule) {
+		assert phpModule != null;
+		return runCommand(phpModule, SHOW, Bundle.ComposerExt_run_showInstalled(),Collections.singletonList(INSTALLED_PARAM));
+	}
 
 	@NbBundle.Messages("ComposerExt.run.updateNoScripts=Composer (update --no-scripts)")
 	public Future<Integer> updateNoScripts(PhpModule phpModule) {
